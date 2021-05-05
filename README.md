@@ -15,6 +15,9 @@ To evaluate the performance of your model, you should use the accuracy metric, w
 - 기본적인 파라미터들은 조교님께서 주신 것들과 비슷하지만 batch_size와 learning rate만 살짝 바꿨습니다.
 - **MultiEpochsDataLoader의 파라미터중 num_workers(코어 수)가 있는데 제가 3090으로 해서 64로 설정했습니다. 4, 8, 16 등으로 줄이셔야 할겁니다. 높을수록 training이 빨라지지만 본인의 코어 수를 넘기면 에러가 뜨기 때문에 에러가 나지 않는 선까지 올리시면 됩니다.**
 
+**Todo**
+- Kaggle에 제출하기 위해 test dataset을 classify해서 이미지/클래스 CSV파일 만들기 
+
 ***
 
 ## Dataset
