@@ -7,7 +7,7 @@ To evaluate the performance of your model, you should use the accuracy metric, w
 
 **추가사항** 
 - Baseline.ipynb 파일을 추가했습니다. 노트북 파일이기 때문에 순석대로 하나하나 run하면 됩니다.
-- 기존 train.py가 맘에 안들어서 제가 training하는 부분은 새로 작성했습니다.
+- 기존 train.py가 맘에 안들어서 제가 training하는 부분은 새로 작성했습니다. (한 epoch 돌때마다 validation accuracy를 측정해 bottleneck이 발생하더라구요...)
 - 특별한 건 없고 early stopping 하나만 추가해 validation loss가 설정한 "patience"가 지나도 더이상 줄어들지 않으면 training을 종료합니다.
 - 맨 마지막의 Test accuracy라고 써져 있는 부분은 validation set에 대한 accuracy입니다. Test set은 라벨링이 되어 있지 않기 때문에 Kaggle에서 돌려보지 않는 이상 모릅니다.
 
