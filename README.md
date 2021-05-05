@@ -3,6 +3,16 @@ In this competition, you are asked to solve the image classification problem for
 
 To evaluate the performance of your model, you should use the accuracy metric, which is widely used in image classification. However, high accuracy doesn't mean you will get a high score on this project. We will consider the novelty of your project, a poster presentation you will prepare, and many other factors during project period.
 
+**추가사항** 
+- Baseline.ipynb 파일을 추가했습니다. 노트북 파일이기 때문에 순석대로 하나하나 run하면 됩니다.
+- 기존 train.py가 맘에 안들어서 제가 training하는 부분은 새로 작성했습니다.
+- 특별한 건 없고 early stopping 하나만 추가해 validation loss가 설정한 "patience"가 지나도 더이상 줄어들지 않으면 training을 종료합니다.
+- 맨 마지막의 Test accuracy라고 써져 있는 부분은 validation set에 대한 accuracy입니다. Test set은 라벨링이 되어 있지 않기 때문에 Kaggle에서 돌려보지 않는 이상 모릅니다.
+
+**유의사항**
+- 기본적인 파라미터들은 조교님께서 주신 것들과 비슷하지만 batch_size와 learning rate만 살짝 바꿨습니다.
+- **MultiEpochsDataLoader의 파라미터중 num_workers(코어 수)가 있는데 제가 3090으로 해서 64로 설정했습니다. 4, 8, 16 등으로 줄이셔야 할겁니다. 높을수록 training이 빨라지지만 본인의 코어 수를 넘기면 에러가 뜨기 때문에 에러가 나지 않는 선까지 올리시면 됩니다.**
+
 
 ## Dataset
 
